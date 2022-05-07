@@ -1,0 +1,171 @@
+@import "_normalize";
+
+// === Variables & Fonts ===
+
+$Primary: #0E6FFF;
+$PrimaryDarker: #0057D8;
+$Secondary: #780EFF;
+$Accent: #FFD80E;
+$Light: #F4F7FB;
+$Dark: #242526;
+
+$Animation: all .2s ease;
+
+@font-face {
+	font-family: "Helvetica Neue Cyr - Regular";
+	src: url("../fonts/HelveticaNeueCyr-Roman.woff2") format("woff2");
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: "Helvetica Neue Cyr - Medium";
+	src: url("../fonts/HelveticaNeueCyr-Medium.woff2") format("woff2");
+	font-weight: 500;
+}
+
+@font-face {
+	font-family: "Helvetica Neue Cyr - Bold";
+	src: url("../fonts/HelveticaNeueCyr-Bold.woff2") format("woff2");
+	font-weight: 700;
+}
+
+// ==================
+
+// === Common ===
+
+body {
+	font-family: "Helvetica Neue Cyr - Regular";
+	font-size: 16px;
+	font-weight: 400;
+	color: $Dark;
+}
+
+h1 {
+	font-size: 58px;
+	font-weight: 700;
+	color: $Dark;
+}
+
+p {
+	font-size: 20px;
+	font-weight: 400;
+	color: rgba($Dark, 0.3);
+}
+
+.container {
+	max-width: 1180px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+// ==================
+
+// === Header ===
+
+
+.header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+
+	padding: 30px 0;
+
+	&__logo {
+		font-size: 16px;
+		font-weight: 500;
+		line-height: 46px;
+		text-align: center;
+		color: $Light;
+
+		background: $Dark;
+		border-radius: 50%;
+		
+		a {
+			display: block;
+
+			width: 46px;
+			height: 46px;
+
+			border-radius: 50%;
+		}
+	}
+}
+
+.nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: end;
+	align-items: center;
+
+	&__link {
+		border-radius: 15px;
+		margin-right: 15px;
+
+		a {
+			display: inline-block;
+
+			padding: 14px 20px;
+
+			&::after {
+				content: "";
+				display: block;
+				height: 2px;
+				width: 100%;
+				position: relative;
+				bottom: -2px;
+				background-color: $Dark;
+
+				transition: $Animation;
+
+				opacity: 0;
+			}
+
+			&:hover {
+				&::after {
+					opacity: 1;
+				}
+			}
+		}
+
+		&:last-child {
+			margin-right: 0;
+
+			a {
+				&::after {
+					display: none;
+				}
+			}
+		}
+
+		&--blue {
+			color: $Light;
+			background-color: $Primary;
+
+			transition: $Animation;
+
+			&:hover {
+				background-color: $PrimaryDarker;
+			}
+		}
+	}
+}
+
+// ==================
+
+// === Hello page ===
+
+.hello-page {
+
+	&__inner {
+		max-width: 940px;
+	}
+
+	&__suptitle {
+	}
+
+	&__title {
+	}
+}
+
+// ==================
