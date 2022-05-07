@@ -143,6 +143,15 @@ h3 {
   color: #242526;
 }
 
+h5 {
+  font-family: "Helvetica Neue Cyr - Medium";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 1.2px;
+  color: rgba(244, 247, 251, 0.6);
+}
+
 p {
   font-size: 20px;
   font-weight: 400;
@@ -327,6 +336,10 @@ header {
   margin-bottom: 10px;
 }
 
+.about-me {
+  margin-bottom: 160px;
+}
+
 .about-me__inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -378,4 +391,121 @@ header {
 
 .about-me__text:last-child {
   margin-bottom: 100px;
+}
+
+.footer__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 138px 180px 138px 70px;
+  color: #F4F7FB;
+  border-radius: 40px;
+  background: #242526;
+}
+
+.footer__info {
+  max-width: 520px;
+}
+
+.footer__title {
+  color: #F4F7FB;
+  margin-bottom: 8px;
+}
+
+.footer__text {
+  color: rgba(244, 247, 251, 0.6);
+}
+
+.footer__contacts {
+  width: 230px;
+}
+
+.footer__email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.footer__email h5 {
+  margin-right: 25px;
+}
+
+.footer__email p {
+  color: rgba(244, 247, 251, 0.6);
+}
+
+.footer__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__links h5 {
+  margin-right: 25px;
+}
+
+.footer__links p {
+  color: rgba(244, 247, 251, 0.6);
+}
+
+.social-links {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.social-links__item a {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-size: contain;
+  background-position: center;
+}
+
+.social-links__item:nth-child(1) a {
+  background-image: url("../img/footer/linkedin.svg");
+}
+
+.social-links__item:nth-child(2) a {
+  background-image: url("../img/footer/twitter.svg");
+}
+
+.social-links__item:nth-child(3) a {
+  background-image: url("../img/footer/instagram.svg");
+}
+
+.social-links__item:nth-child(4) a {
+  background-image: url("../img/footer/twitch.svg");
+}
+
+.copyright {
+  text-align: center;
+  padding: 36px 0;
+}
+
+.copyright__text {
+  font-size: 16px;
+  color: rgba(36, 37, 38, 0.6);
 }

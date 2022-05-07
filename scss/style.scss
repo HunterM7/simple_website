@@ -67,6 +67,15 @@ h3 {
 	color: $Dark;
 }
 
+h5 {
+	font-family: "Helvetica Neue Cyr - Medium";
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 1.2;
+	letter-spacing: 1.2px;
+	color: rgba($Light, 0.6);
+}
+
 p {
 	font-size: 20px;
 	font-weight: 400;
@@ -265,6 +274,7 @@ header {
 // === About me page ===
 
 .about-me {
+	margin-bottom: 160px;
 
 	&__inner {
 		display: flex;
@@ -316,6 +326,127 @@ header {
 		&:last-child {
 			margin-bottom: 100px;
 		}
+	}
+}
+
+// ==================
+
+// === Footer ===
+
+.footer {
+	
+	&__inner {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+
+		padding: 138px 180px 138px 70px;
+		color: $Light;
+
+		border-radius: 40px;
+		background: $Dark;
+	}
+
+	&__info {
+		max-width: 520px;
+	}
+
+	&__title {
+		color: $Light;
+		margin-bottom: 8px;
+	}
+
+	&__text {
+		color: rgba($Light, 0.6);
+	}
+
+	&__contacts {
+		width: 230px;
+	}
+
+	&__email {
+		display: flex;
+		margin-bottom: 30px;
+		
+		h5 {
+			margin-right: 25px;
+		}
+
+		p {
+			color: rgba($Light, 0.6);
+		}
+	}
+
+	&__links {
+		display: flex;
+
+		h5 {
+			margin-right: 25px;
+		}
+		
+		p {
+			color: rgba($Light, 0.6);
+		}
+	}
+}
+
+.social-links {
+	width: 100%;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+
+	&__item {
+
+		a {
+			display: block;
+			width: 24px;
+			height: 24px;
+
+			background-size: contain;
+			background-position: center;
+		}
+
+		&:nth-child(1) {
+			a {
+				background-image: url('../img/footer/linkedin.svg');
+			}
+		}
+
+		&:nth-child(2) {
+			a {
+				background-image: url('../img/footer/twitter.svg');
+			}
+		}
+
+		&:nth-child(3) {
+			a {
+				background-image: url('../img/footer/instagram.svg');
+			}
+		}
+
+		&:nth-child(4) {
+			a {
+				background-image: url('../img/footer/twitch.svg');
+			}
+		}
+	}
+}
+
+// ==================
+
+// === Copyright ===
+
+.copyright {
+	text-align: center;
+	padding: 36px 0;
+
+	&__text {
+		font-size: 16px;
+		color: rgba($Dark, 0.6);
 	}
 }
 
