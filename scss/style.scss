@@ -41,6 +41,7 @@ body {
 }
 
 h1 {
+	font-family: "Helvetica Neue Cyr - Bold";
 	font-size: 58px;
 	font-weight: 700;
 	line-height: 1.23;
@@ -49,6 +50,7 @@ h1 {
 }
 
 h2 {
+	font-family: "Helvetica Neue Cyr - Bold";
 	font-size: 44px;
 	font-weight: 700;
 	line-height: 1.4;
@@ -57,6 +59,7 @@ h2 {
 }
 
 h3 {
+	font-family: "Helvetica Neue Cyr - Bold";
 	font-size: 32px;
 	font-weight: 700;
 	line-height: 1.2;
@@ -94,6 +97,7 @@ header {
 	padding: 30px 0;
 
 	&__logo {
+		font-family: "Helvetica Neue Cyr - Medium";
 		font-size: 16px;
 		font-weight: 500;
 		line-height: 46px;
@@ -194,9 +198,11 @@ header {
 
 // ==================
 
-// === Hello page ===
+// === Work page ===
 
 .works {
+
+	margin-bottom: 220px;
 
 	&__inner {
 		display: flex;
@@ -205,8 +211,7 @@ header {
 		align-items: start;
 	}
 
-	&__item {
-	}
+	// &__item {}
 
 	&__title {
 		margin-bottom: 100px;
@@ -225,7 +230,6 @@ header {
 
 		border-radius: 20px;
 
-		background-image: url('../img/works/work-1.jpg');
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -254,6 +258,65 @@ header {
 	// &__info {
 	// }
 
+}
+
+// ==================
+
+// === About me page ===
+
+.about-me {
+
+	&__inner {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+
+		padding-left: 16px;
+	}
+
+	&__photo {
+		width: 520px;
+		height: 630px;
+
+		border-radius: 20px;
+
+		background: rgba($Primary, 0.3);
+
+		position: relative;
+	}
+
+	&__img {
+		width: 100%;
+		height: 100%;
+
+		border-radius: 20px;
+
+		position: absolute;
+
+		right: 36px;
+		bottom: 42px;
+
+		background: url('../img/about-me/photo.jpg') no-repeat center;
+		background-size: cover;
+	}
+
+	&__info {
+		max-width: 530px;
+		padding: 0 10px;
+	}
+
+	&__title {
+		margin-bottom: 25px;
+	}
+
+	&__text {
+		margin-bottom: 15px;
+
+		&:last-child {
+			margin-bottom: 100px;
+		}
+	}
 }
 
 // ==================
