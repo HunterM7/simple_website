@@ -43,6 +43,8 @@ body {
 h1 {
 	font-size: 58px;
 	font-weight: 700;
+	line-height: 1.2;
+	letter-spacing: 1.7px;
 	color: $Dark;
 }
 
@@ -62,6 +64,9 @@ p {
 
 // === Header ===
 
+header {
+	margin-bottom: 95px;
+}
 
 .header {
 	display: flex;
@@ -156,12 +161,14 @@ p {
 // === Hello page ===
 
 .hello-page {
+	margin-bottom: 200px;
 
 	&__inner {
 		max-width: 940px;
 	}
 
 	&__suptitle {
+		margin-bottom: 16px;
 	}
 
 	&__title {

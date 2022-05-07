@@ -119,6 +119,8 @@ body {
 h1 {
   font-size: 58px;
   font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 1.7px;
   color: #242526;
 }
 
@@ -132,6 +134,10 @@ p {
   max-width: 1180px;
   padding: 0 15px;
   margin: 0 auto;
+}
+
+header {
+  margin-bottom: 95px;
 }
 
 .header {
@@ -230,6 +236,14 @@ p {
   background-color: #0057D8;
 }
 
+.hello-page {
+  margin-bottom: 200px;
+}
+
 .hello-page__inner {
   max-width: 940px;
+}
+
+.hello-page__suptitle {
+  margin-bottom: 16px;
 }
